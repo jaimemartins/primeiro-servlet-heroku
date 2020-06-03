@@ -28,7 +28,6 @@ public class ExemploServlet extends HttpServlet {
 		usuario.setEmail(email);
 		PrintWriter out = resp.getWriter();		
 		out.print("<html><head><title>Meu Servlet</title></head><body>");
-		out.print("O email digitado foi: "+email);
 		out.print("O email digitado foi: "+usuario.getEmail());	
 		
 		if(dao.incluir(usuario)) {
